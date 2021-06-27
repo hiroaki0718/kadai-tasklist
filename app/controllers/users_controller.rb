@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
+  
   def index
-    
   end
 
   def show
@@ -19,7 +19,8 @@ class UsersController < ApplicationController
     else
       flash.now[:danger] = 'ユーザの登録に失敗しました。'
       render :new
-  end
+    end
+  end  
   private
 
   def user_params
